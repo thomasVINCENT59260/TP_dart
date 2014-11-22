@@ -1,0 +1,9 @@
+name: wysiwyg
+description: A pub package 
+dependencies:
+    angular: "1.0.0"
+transformers:
+- angular:
+    html_files:
+      - lib/button_template.html
+      - lib/wysiwyg_template.html

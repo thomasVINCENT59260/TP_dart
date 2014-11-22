@@ -1,0 +1,16 @@
+name: Tchat
+description: A sample web application
+dependencies:
+  angular: 1.0.0
+  browser: any
+  serialize:
+    path: ../serialize
+  shadow_dom: any
+  wysiwyg:
+    path: ../wysiwyg
+transformers:
+- angular:
+    html_files:
+    - web/view/chatclient.html
+    - web/view/login.html
+    - lib/component/liste_user.html

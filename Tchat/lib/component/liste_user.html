@@ -1,0 +1,4 @@
+<div style="height:100%;border:1px solid grey">
+  <input type="text" placeholder="Rechercher" ng-model="regexp"/>
+  <div ng-repeat="user in users | userFilter:regexp" ng-bind="user.pseudo"></div>
+</div>
