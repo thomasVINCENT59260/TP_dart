@@ -49,8 +49,7 @@ class Tchat extends ListenerWebSocket{
   }
   
   void sendMessage(){
-      Commande cmd=new Commande();
-      cmd.cmd=CMD_NEW_MSG;
+      Commande cmd=new Commande_new_message();
       Message msg=new Message();
       msg.message=this.msg;
       msg.sender=user;

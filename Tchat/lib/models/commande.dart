@@ -39,3 +39,12 @@ class Commande_liste_user extends Serializable implements Commande{
     cmd=CMD_LIST_USER;
   }
 }
+
+class Commande_new_message extends Serializable implements Commande{
+  String cmd;
+  dynamic val;
+    
+  Commande_new_message(){
+    cmd=CMD_NEW_MSG;
+  }
+}

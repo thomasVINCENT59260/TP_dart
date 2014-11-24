@@ -7,7 +7,7 @@ import 'package:wysiwyg/button.dart';
 
 @Component(
     selector: 'wysiwyg',
-    template:'<div style="height:20%"><boldBtn></boldBtn><italicBtn></italicBtn><underlineBtn></underlineBtn><imageBtn></imageBtn></div><div contenteditable="true" id="contentWysiwyg" style="width:100%;height:80%;border:1px solid grey"></div><button type="button" ng-click="send()">Envoyer</button>',
+    template:'<div style="height:20%"><boldBtn></boldBtn><italicBtn></italicBtn><underlineBtn></underlineBtn></div><div contenteditable="true" id="contentWysiwyg" style="width:100%;height:80%;border:1px solid grey"></div><button type="button" ng-click="send()">Envoyer</button>',
     map:const {
       'msg':'<=>msg',
       'handler':'&handler'
@@ -41,6 +41,5 @@ class WysiwygModule extends Module{
     bind(Bold);
     bind(Italic);
     bind(Underline);
-    bind(Image);
   }
 }
